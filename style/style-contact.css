@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+
+@keyframes pop {
+    0% {
+            opacity: 0; 
+            transform: scale(0.9);
+        }
+    100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+    background-size: auto 1600px;
+    font-family: 'Kiwi Maru', serif;
+    object-fit: fill;
+    background-image: linear-gradient(12deg, rgba(133,133,133, 0.05) 0%, rgba(133,133,133, 0.05) 2%,rgba(129, 129, 129,0.05) 2%, rgba(129, 129, 129,0.05) 27%,rgba(185, 185, 185,0.05) 27%, rgba(185, 185, 185,0.05) 66%,rgba(83, 83, 83,0.05) 66%, rgba(83, 83, 83,0.05) 100%),linear-gradient(321deg, rgba(96,95,95, 0.2) 0%, rgba(96,95,95, 0.2) 13%,rgba(231, 231, 231,0.05) 13%, rgba(231, 231, 231,0.05) 34%,rgba(139, 139, 139,0.05) 34%, rgba(139, 139, 139,0.05) 71%,rgba(112, 112, 112,0.05) 71%, rgba(112, 112, 112,0.05) 100%),linear-gradient(236deg, rgba(189, 189, 189,0.05) 0%, rgba(189, 189, 189,0.05) 47%,rgba(138, 138, 138,0.05) 47%, rgba(138, 138, 138,0.05) 58%,rgba(108, 108, 108,0.05) 58%, rgba(108, 108, 108,0.05) 85%,rgba(143, 143, 143,0.05) 85%, rgba(143, 143, 143,0.05) 100%),linear-gradient(96deg, rgba(53, 53, 53,0.05) 0%, rgba(53, 53, 53,0.05) 53%,rgba(44, 44, 44,0.05) 53%, rgba(44, 44, 44,0.05) 82%,rgba(77, 77, 77,0.05) 82%, rgba(77, 77, 77,0.05) 98%,rgba(8, 8, 8,0.05) 98%, rgba(8, 8, 8,0.05) 100%),linear-gradient(334deg, hsl(247,0%,2%),hsl(247,0%,2%));
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+a:hover{
+    font-weight: 800;
+}
+
+
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 50px 0px;
+}
+
+#nom{
+    min-width: 100px;
+    width: 60%;
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.452);
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+
+}
+
+#prenom{
+    min-width: 100px;
+    width: 60%;
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.452);
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+
+}
+
+
+#email{
+    min-width: 100px;
+    width: 60%;
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.452);
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+}
+
+#texte{
+    min-width: 100px;
+    width: 60%;
+    height: 100px;
+    padding: 20px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.452);
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+}
+
+#envoyer{
+    min-width: 100px;
+    width: 60%;
+    height: 60px;
+    padding: 20px 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.452);
+    background-color: black;
+    color: white;
+}
+
+
+#logo-contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 5px;
+}
+
+#img-email{
+    width: 50px;
+    height: 50px;
+
+}
+
+.desc-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc-logo p{
+    margin-bottom: 0px;
+}
+
+#img-linkedin{
+    width: 50px;
+    height: 50px;
+}
+
+#img-github{
+    width: 50px;
+    height: 50px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 50px 0px;
+    
+}
+
+nav a {
+    margin-right: 50px;
+}
+
+#presentation{
+    animation: pop 0.5s;
+    background-image: linear-gradient(112.5deg, rgb(190,185,185) 0%, rgb(190,185,185) 10%,rgb(168,166,166) 10%, rgb(168,166,166) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(190,185,185) 0%, rgb(190,185,185) 10%,rgb(168,166,166) 10%, rgb(168,166,166) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(190,185,185) 0%, rgb(190,185,185) 10%,rgb(168,166,166) 10%, rgb(168,166,166) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(168,166,166),rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.548);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+h2{
+    margin: 0;
+    font-size: 100px;
+    font-family: 'Carattere', cursive;
+    position: relative;
+    top: 5px;
+}
+
+#flex-main{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#btn{
+    background-color: rgb(21, 19, 37);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.548);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 800;
+    width: 250px;
+    font-size: 18px;
+}
+
+@media (max-width : 762px){
+    #presentation{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width : 768px){
+
+    #presentation{
+        margin: 0px;
+        max-width: none;
+        border-radius: 0px;
+    }
+    nav {
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        margin: 0;
+    }
+#logo-contact{
+    justify-content: space-between;
+    width: 80%;
+}
+}
+
+@media (max-width : 580px){
+    #logo-contact{
+        justify-content: space-between;
+        width: 80%;
+    }
+    }
+
+
+    @media (max-width : 500px){
+        #email,#nom,#logo,#texte{
+            margin-bottom: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .desc-logo{
+            margin: 0px 10px;
+        }
+        #presentation{
+            height: 700px
+        }
+        #logo-contact{
+            justify-content: center;
+            width: 150%;
+            transform: scale(0.8);
+        }
+
+        h2{
+            font-size: 80px;
+        }
+
+        nav a{
+            font-size: 15px;
+        }
+        }
+
+        @media (max-width : 375px){
+            #email,#nom,#logo,#texte{
+                margin-bottom: 40px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            #img-email,#img-linkedin,#img-github{
+                width: 30px;
+                height: 30px;
+            }
+
+            .desc-logo{
+                margin: 0px 10px;
+                font-size: 12px;
+            }
+            #presentation{
+                height: 650px;
+            }
+            #logo-contact{
+                justify-content: center;
+                width: 150%;
+                transform: scale(0.8);
+            }
+    
+            h2{
+                font-size: 60px;
+            }
+    
+            nav a{
+                font-size: 15px;
+            }
+            }
+    
+
