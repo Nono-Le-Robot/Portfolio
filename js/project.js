@@ -18,23 +18,10 @@ for (let k = 0; k < siteLogo.length; k++) {
 }
 
 
-
-
-
 for (let index = 0; index < card.length; index++) {
-
-
-
-
-
-
-
-  if(index != 1){
-
     project[index].addEventListener('click', (e) => {
      
       card[index].classList.toggle('rotate')
       e.stopPropagation()
     })
-  } 
 }
