@@ -155,7 +155,6 @@ body {
 
 html {
   height: auto;
-  padding-bottom: 50px;
 }
 
 a {
@@ -173,7 +172,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: end;
-  margin: 50px 0px;
 }
 
 nav a {
@@ -268,7 +266,7 @@ nav a {
 
 h2 {
   font-size: 100px;
-  margin-bottom: 80px;
+
   font-family: "Carattere", cursive;
 }
 
@@ -302,6 +300,19 @@ h2 {
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.548);
 }
 
+@media (max-width: 5000px) {
+  html {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  #flex-main {
+    height: 85vh;
+  }
+  nav {
+    height: 10vh;
+  }
+}
 @media (max-width: 1560px) {
   #btn {
     margin-bottom: 50px;
@@ -310,7 +321,8 @@ h2 {
     margin-top: 50px;
   }
   #presentation {
-    height: auto;
+    height: 80vh;
+
     width: 100%;
     margin-left: 50px;
     margin-right: 50px;
@@ -318,7 +330,7 @@ h2 {
 
   #presentation2 {
     display: none;
-    height: auto;
+
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 100px;
@@ -338,7 +350,8 @@ h2 {
     margin-right: 20px;
   }
   #flex-main {
-    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    /* flex-wrap: wrap-reverse; */
   }
   body {
     overflow: visible;

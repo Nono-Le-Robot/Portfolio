@@ -281,8 +281,7 @@ h3 {
 .swiper {
   overflow: hidden;
   width: 70%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+
   margin-right: 0px;
   margin-left: 0px;
 }
@@ -309,7 +308,6 @@ h3 {
 #flex-main
   > div.swiper.mySwiper.swiper-coverflow.swiper-3d.swiper-initialized.swiper-horizontal.swiper-watch-progress {
   padding-top: 0px;
-  padding-bottom: 0px;
   width: 50%;
   margin-left: 50px;
 }
@@ -375,7 +373,6 @@ body {
 
 html {
   height: auto;
-  padding-bottom: 50px;
 }
 
 a {
@@ -393,11 +390,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: end;
-  margin: 50px 0px;
 }
 
 nav a {
   margin-right: 50px;
+}
+h2 {
+  margin-bottom: 8rem;
 }
 
 #openclassrooms-sep:hover {
@@ -503,7 +502,6 @@ h2 {
   margin-top: 0px;
   font-size: 100px;
   font-family: "Carattere", cursive;
-  margin-bottom: 100px;
 }
 
 #flex-main {
@@ -535,6 +533,20 @@ h2 {
   transform: scale(1.02);
   background-color: rgb(48, 48, 48);
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.548);
+}
+
+@media (max-width: 5000px) {
+  html {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  #flex-main {
+    height: 85vh;
+  }
+  nav {
+    height: 10vh;
+  }
 }
 
 @media (max-width: 1560px) {
@@ -658,6 +670,13 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  html {
+    height: 100vh;
+    overflow-y: visible;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+  }
   #presentation {
     padding: 100px 0px;
     height: 100%;

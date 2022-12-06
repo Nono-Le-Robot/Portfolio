@@ -187,8 +187,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: end;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 nav a {
@@ -361,14 +359,29 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 30px;
   animation: pop 0.1s forwards;
   opacity: 0;
 }
 
+@media (max-width: 5000px) {
+  html {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  #flex-main {
+    height: 85vh;
+  }
+  nav {
+    height: 10vh;
+  }
+}
 @media (max-width: 1560px) {
   h2 {
     margin-top: 50px;
+  }
+  html {
+    overflow-y: visible;
   }
   #presentation {
     position: relative;
