@@ -355,6 +355,18 @@ h2 {
   font-family: "Carattere", cursive;
 }
 
+#portfolio-3d{
+  width: 40px;
+  margin-right: 30px;
+  transition: 0.2s;
+}
+
+#portfolio-3d:hover{
+  cursor:pointer;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
 #flex-main {
   display: flex;
   justify-content: space-evenly;

@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
   <div id="main">
     <nav>
       <a href="../index.html">Accueil</a>
@@ -29,32 +28,96 @@
         </div>
       </div>
       <div class="selectDisable swiper mySwiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div id="pagination">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
         <div class="swiper-wrapper">
-
-
 
           <div class="swiper-slide">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <!-- <img id="scroll-icon" src="../img/scroll.png" alt=""> -->
                 <div class="flip-card-front">
-                  <img id="assistant-vocal-project" src="../img/tuner-minia.png" />
+                  <img id="assistant-vocal-project" src="../img/electricitymap-minia.png" />
                 </div>
                 <div class="flip-card-back">
-                  <img style="position: absolute; z-index: -99;  filter: brightness(40%) blur(25px) contrast(1.3); "
-                    id="assistant-vocal-project" src="../img/tuner-minia.png" />
+                  <img style="position: absolute; z-index: -99;  filter: brightness(40%) blur(10px) contrast(1.3); "
+                    id="assistant-vocal-project" src="../img/electricitymap-minia.png" />
                   <div>
                     <h3>Mission :</h3>
-                    <p>Réaliser une application permettant d'accorder des instruments de musiques</p>
-
+                    <p>Réaliser une application de référencement de point de charge sur une map.</p>
                   </div>
                   <div>
                     <h3>Techno utilisées :</h3>
-                    <p>HTML / CSS / JS</p>
+                    <p class="techno">SvelteJS / NodeJs / Leaflet.js</p>
+                    <p class="techno">Express / MongoDB / Axios </p>
                   </div>
                   <div class="link-project-logo">
-                    <a class="site-project-logo" href="https://sannier-renaud.fr/tuner" target="_blank"><img
-                        style='border-radius: 10px;' src="../img/site-web.png" alt="" srcset=""></a>
+                    <a class="site-project-logo" href="https://electricitymap.fr" target="_blank"><img
+                        style='border-radius: 10px;' src="../img/site-web.jpg" alt="" srcset=""></a>
+                    <a class="github-project-logo" href="https://github.com/Nono-Le-Robot/ElectriCityMap"
+                      target="_blank"><img src="../img/github-project.png" alt="" srcset=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <!-- <img id="scroll-icon" src="../img/scroll.png" alt=""> -->
+                <div class="flip-card-front">
+                  <img id="assistant-vocal-project" src="../img/type-tower-minia.png" />
+                </div>
+                <div class="flip-card-back">
+                  <img style="position: absolute; z-index: -99;  filter: brightness(40%) blur(10px) contrast(1.3); "
+                    id="assistant-vocal-project" src="../img/type-tower-minia.png" />
+                  <div>
+                    <h3>Mission :</h3>
+                    <p>Réaliser un jeu vidéo 2D.</p>
+                  </div>
+                  <div>
+                    <h3>Techno utilisées :</h3>
+                    <p class="techno">JS / NodeJs</p>
+                    <p class="techno">Express / MongoDB / Axios </p>
+                  </div>
+                  <div class="link-project-logo">
+                    <a class="site-project-logo" href="https://sannier-renaud.fr/type-tower" target="_blank"><img
+                        style='border-radius: 10px;' src="../img/site-web.jpg" alt="" srcset=""></a>
+                    <a class="github-project-logo" href="https://github.com/Nono-Le-Robot/Fast_Typing"
+                      target="_blank"><img src="../img/github-project.png" alt="" srcset=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <!-- <img id="scroll-icon" src="../img/scroll" alt=""> -->
+                <div class="flip-card-front">
+                  <img id="assistant-vocal-project" src="../img/tuner-minia.jpg" />
+                </div>
+                <div class="flip-card-back">
+                  <img style="position: absolute; z-index: -99;  filter: brightness(40%) blur(10px) contrast(1.3); "
+                    id="assistant-vocal-project" src="../img/tuner-minia.jpg" />
+                  <div>
+                    <h3>Mission :</h3>
+                    <p>Réaliser une application permettant d'accorder des instruments de musiques</p>
+                  </div>
+                  <div>
+                    <h3>Techno utilisées :</h3>
+                    <p class="techno">HTML / CSS / JS</p>
+                  </div>
+                  <div class="link-project-logo">
+                    <a class="site-project-logo" href="https://tuner.sanren.fr" target="_blank"><img
+                        style='border-radius: 10px;' src="../img/site-web.jpg" alt="" srcset=""></a>
                     <a class="github-project-logo" href="https://github.com/Nono-Le-Robot/Tuner" target="_blank"><img
                         src="../img/github-project.png" alt="" srcset=""></a>
                   </div>
@@ -65,29 +128,30 @@
 
 
 
+
           <div class="swiper-slide">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <!-- <img id="scroll-icon" src="../img/scroll.png" alt=""> -->
                 <div class="flip-card-front">
-                  <img id="assistant-vocal-project" src="../img/my-sharing-base-minia.png" />
+                  <img id="assistant-vocal-project" src="../img/my-sharing-base-minia.jpg" />
                 </div>
                 <div class="flip-card-back">
-                  <img style="position: absolute; z-index: -99;  filter: brightness(40%) blur(25px) contrast(1.3); "
-                    id="assistant-vocal-project" src="../img/my-sharing-base-minia.png" />
+                  <img style="position: absolute; z-index: -99;  filter: brightness(40%) blur(10px) contrast(1.3); "
+                    id="assistant-vocal-project" src="../img/my-sharing-base-minia.jpg" />
                   <div>
                     <h3>Mission :</h3>
                     <p>Réaliser une application Web de partage de fichiers sans limites de stockage.</p>
                   </div>
                   <div>
                     <h3>Techno utilisées :</h3>
-                    <p>React / NodeJs</p>
-                    <p>Express / MongoDB / Axios </p>
-                    <p>FileSystem / Bcrypt / JWT </p>
+                    <p class="techno">React / NodeJs</p>
+                    <p class="techno">Express / MongoDB / Axios </p>
+                    <p class="techno">FileSystem / Bcrypt / JWT </p>
                   </div>
                   <div class="link-project-logo">
-                    <a class="site-project-logo" href="https://sannier-renaud.fr/my-sharing-base" target="_blank"><img
-                        style='border-radius: 10px;' src="../img/site-web.png" alt="" srcset=""></a>
+                    <a class="site-project-logo" href="https://my-sharing-base.sanren.fr" target="_blank"><img
+                        style='border-radius: 10px;' src="../img/site-web.jpg" alt="" srcset=""></a>
                     <a class="github-project-logo" href="https://github.com/Nono-Le-Robot/My_Sharing_Base"
                       target="_blank"><img src="../img/github-project.png" alt="" srcset=""></a>
                   </div>
@@ -95,31 +159,28 @@
               </div>
             </div>
           </div>
-
-
           <div class="swiper-slide">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <!-- <img id="scroll-icon" src="../img/scroll.png" alt=""> -->
                 <div class="flip-card-front">
-                  <img id="assistant-vocal-project" src="../img/assistant-vocal-minia.png" />
+                  <img id="assistant-vocal-project" src="../img/assistant-vocal-minia.jpg" />
                 </div>
                 <div class="flip-card-back">
-                  <img style="position: absolute; z-index: -99;  filter: brightness(40%) blur(25px) contrast(1.3); "
-                    id="assistant-vocal-project" src="../img/assistant-vocal-minia.png" />
+                  <img style="position: absolute; z-index: -99;  filter: brightness(40%) blur(10px) contrast(1.3); "
+                    id="assistant-vocal-project" src="../img/assistant-vocal-minia.jpg" />
                   <div>
                     <h3>Mission :</h3>
                     <p>Executer des commandes en fonction de commandes vocales reçues</p>
-                    <br>
-                    <p>(Chrome / Edge) uniquement.</p>
+                    <p id="chrome-only">(Chrome / Edge) uniquement.</p>
                   </div>
                   <div>
                     <h3>Techno utilisées :</h3>
-                    <p>React / NodeJs / SpeechRecognition / OpenAI API.</p>
+                    <p class="techno">React / NodeJs / SpeechRecognition.</p>
                   </div>
                   <div class="link-project-logo">
-                    <a class="site-project-logo" href="https://sannier-renaud.fr/js-assist" target="_blank"><img
-                        style='border-radius: 10px;' src="../img/site-web.png" alt="" srcset=""></a>
+                    <a class="site-project-logo" href="https://js-assist.sanren.fr" target="_blank"><img
+                        style='border-radius: 10px;' src="../img/site-web.jpg" alt="" srcset=""></a>
                     <a class="github-project-logo" href="https://github.com/Nono-Le-Robot/JS_Assist"
                       target="_blank"><img src="../img/github-project.png" alt="" srcset=""></a>
                   </div>
@@ -127,18 +188,15 @@
               </div>
             </div>
           </div>
-
-
-
-          <div id="openclassrooms-sep" class="swiper-slide">
+          <!-- <div id="openclassrooms-sep" class="swiper-slide">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img id="groupomania-project" src="../img/openclassrooms.png" />
+                  <img id="groupomania-project" src="../img/openclassrooms.jpg" />
                 </div>
                 <div class="flip-card-back">
-                  <img style="position: absolute; z-index: -99;  filter: brightness(50%) blur(25px) contrast(1); "
-                    id="groupomania-project" src="../img/openclassrooms.png" />
+                  <img style="position: absolute; z-index: -99;  filter: brightness(50%) blur(10px) contrast(1); "
+                    id="groupomania-project" src="../img/openclassrooms.jpg" />
                   <div>
                     <h3 style="margin-left: 25px; margin-right: 25px">Projets OpenClassrooms</h3>
                     <br>
@@ -150,32 +208,28 @@
               </div>
             </div>
           </div>
-
-
-
-
           <div id="openclassrooms-sep" class="swiper-slide">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img id="groupomania-project" src="../img/groupomania-minia.png" />
+                  <img id="groupomania-project" src="../img/groupomania-minia.jpg" />
                 </div>
                 <div class="flip-card-back">
-                  <img style="position: absolute; z-index: -99;  filter: brightness(50%) blur(25px) contrast(1); "
-                    id="groupomania-project" src="../img/groupomania-minia.png" />
+                  <img style="position: absolute; z-index: -99;  filter: brightness(50%) blur(10px) contrast(1); "
+                    id="groupomania-project" src="../img/groupomania-minia.jpg" />
                   <div>
                     <h3>Mission :</h3>
-                    <p>Réaliser le back end et le front end en suivant un cahier des charges et sécuriser le tout. </p>
+                    <p>Réaliser le back et le front en suivant un cahier des charges et sécuriser le tout. </p>
                   </div>
                   <div>
                     <h3>Techno utilisées :</h3>
-                    <p>VueJS / NodeJS</p>
-                    <p>Express / MongoDB / Axios </p>
-                    <p>FileSystem / Bcrypt / JWT </p>
+                    <p class="techno">VueJS / NodeJS</p>
+                    <p class="techno">Express / MongoDB / Axios </p>
+                    <p class="techno">FileSystem / Bcrypt / JWT </p>
                   </div>
                   <div class="link-project-logo">
                     <a class="site-project-logo" href="https://sannier-renaud.fr/groupomania" target="_blank"><img
-                        style='border-radius: 10px;' src="../img/site-web.png" alt="" srcset=""></a>
+                        style='border-radius: 10px;' src="../img/site-web.jpg" alt="" srcset=""></a>
                     <a class="github-project-logo"
                       href="https://github.com/Nono-Le-Robot/TP07_Creez_un_reseau_social_d-entreprise"
                       target="_blank"><img src="../img/github-project.png" alt="" srcset=""></a>
@@ -184,29 +238,26 @@
               </div>
             </div>
           </div>
-
-
-
           <div id="openclassrooms-sep" class="swiper-slide">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img id="kanap-project" src="../img/kanap-minia.png" />
+                  <img id="kanap-project" src="../img/kanap-minia.jpg" />
                 </div>
                 <div class="flip-card-back">
-                  <img style="position: absolute; z-index: -99;  filter: brightness(30%) blur(25px) contrast(1.3); "
-                    id="kanap-project" src="../img/kanap-minia.png" />
+                  <img style="position: absolute; z-index: -99;  filter: brightness(30%) blur(10px) contrast(1.3); "
+                    id="kanap-project" src="../img/kanap-minia.jpg" />
                   <div>
                     <h3>Mission :</h3>
                     <p>Connecter le front end au back end (déjà existant) et assurer la sécurité côté front.</p>
                   </div>
                   <div>
                     <h3>Techno utilisées :</h3>
-                    <p>HTML / CSS (Sass) / JS.</p>
+                    <p class="techno">HTML / CSS (Sass) / JS.</p>
                   </div>
                   <div class="link-project-logo">
                     <a class="site-project-logo" href="https://sannier-renaud.fr/kanap" target="_blank"><img
-                        style='border-radius: 10px;' src="../img/site-web.png" alt="" srcset=""></a>
+                        style='border-radius: 10px;' src="../img/site-web.jpg" alt="" srcset=""></a>
                     <a class="github-project-logo"
                       href="https://github.com/Nono-Le-Robot/TP05_Construisez_un_site_e-commerce_en_JavaScript"
                       target="_blank"><img src="../img/github-project.png" alt="" srcset=""></a>
@@ -215,19 +266,15 @@
               </div>
             </div>
           </div>
-
-
-
-
           <div id="openclassrooms-sep" class="swiper-slide">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img id="ohmyfood-project" src="../img/ohmyfood-minia.png" />
+                  <img id="ohmyfood-project" src="../img/ohmyfood-minia.jpg" />
                 </div>
                 <div class="flip-card-back">
-                  <img style="position: absolute; z-index: -99;  filter: brightness(50%) blur(25px) contrast(1.3); "
-                    id="ohmyfood-project" src="../img/ohmyfood-minia.png" />
+                  <img style="position: absolute; z-index: -99;  filter: brightness(50%) blur(10px) contrast(1.3); "
+                    id="ohmyfood-project" src="../img/ohmyfood-minia.jpg" />
                   <div>
                     <h3>Mission :</h3>
                     <p>Réaliser le site web d’une application de commande de nourriture en s’aidant d’un cahier des
@@ -235,11 +282,11 @@
                   </div>
                   <div>
                     <h3>Techno utilisées :</h3>
-                    <p>HTML / CSS (Sass).</p>
+                    <p class="techno">HTML / CSS (Sass).</p>
                   </div>
                   <div class="link-project-logo">
                     <a class="site-project-logo" href="https://sannier-renaud.fr/ohmyfood" target="_blank"><img
-                        style='border-radius: 10px;' src="../img/site-web.png" alt="" srcset=""></a>
+                        style='border-radius: 10px;' src="../img/site-web.jpg" alt="" srcset=""></a>
                     <a class="github-project-logo"
                       href="https://github.com/Nono-Le-Robot/TP03_Dynamisez_une_page_web_avec_des_animations_CSS"
                       target="_blank"><img src="../img/github-project.png" alt="" srcset=""></a>
@@ -248,75 +295,77 @@
               </div>
             </div>
           </div>
-
-
           <div id="openclassrooms-sep" class="swiper-slide">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img id="booki-project" src="../img/booki-minia.png" />
+                  <img id="booki-project" src="../img/booki-minia.jpg" />
                 </div>
                 <div class="flip-card-back">
-                  <img style="position: absolute; z-index: -99;  filter: brightness(50%) blur(25px) contrast(1.3); "
-                    id="booki-project" src="../img/booki-minia.png" />
+                  <img style="position: absolute; z-index: -99;  filter: brightness(50%) blur(10px) contrast(1.3); "
+                    id="booki-project" src="../img/booki-minia.jpg" />
                   <div>
                     <h3>Mission :</h3>
                     <p>Réaliser un site web en HTML / CSS à l'aide d'une maquette et d'un cahier des charges.</p>
                   </div>
                   <div>
                     <h3>Techno utilisées :</h3>
-                    <p>HTML / CSS.</p>
+                    <p class="techno">HTML / CSS.</p>
                   </div>
                   <div class="link-project-logo">
                     <a class="site-project-logo" href="https://sannier-renaud.fr/booki" target="_blank"><img
-                        style='border-radius: 10px;' src="../img/site-web.png" alt="" srcset=""></a>
+                        style='border-radius: 10px;' src="../img/site-web.jpg" alt="" srcset=""></a>
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
-          </div>
-
-
-
+          </div>-->
           <!-- Swiper JS -->
-          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+          <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
           <!-- Initialize Swiper -->
           <script>
-
-
             var swiper = new Swiper(".mySwiper", {
               effect: "coverflow",
+              direction: 'horizontal',
               grabCursor: true,
               centeredSlides: true,
               slidesPerView: "auto",
+              // observer: true,
+              loop: false,
+              // Activation du swipe sur les périphériques mobiles
+              // touchEventsTarget: 'container',
+              // Empêchez le défilement de la page lors du swipe
+              // preventInteractionOnTransition: true,
+              // autoplay: {
+              //   delay: 5000,
+              // },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
               keyboard: {
                 enabled: true,
-                onlyInViewport: false,
-
+                onlyInViewport: true,
               },
-              threshold: 10,
+              threshold: 20,
               coverflowEffect: {
-                rotate: 80,
-                stretch: 0,
+                rotate: 30,
+                stretch: -30,
                 depth: 400,
 
                 modifier: 1,
-                slideShadows: true,
-
+                slideShadows: false,
               },
-
               pagination: {
                 el: ".swiper-pagination",
               },
             });
+            // swiper.autoplay.start();
           </script>
-
-
         </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
       <script src="../js/project.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>

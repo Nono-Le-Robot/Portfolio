@@ -198,11 +198,12 @@ video {
 }
 
 .flip-card-inner:hover {
-  cursor: pointer;
+  cursor: grab;
 }
 
 .flip-card-front,
 .flip-card-back {
+  border-radius: 1rem;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -215,7 +216,7 @@ video {
   color: black;
 }
 .flip-card-front:hover {
-  cursor: pointer;
+  cursor: grab;
 }
 
 .flip-card-front:active {
@@ -279,7 +280,6 @@ h3 {
 }
 
 .swiper {
-  overflow: hidden;
   width: 70%;
 
   margin-right: 0px;
@@ -289,8 +289,8 @@ h3 {
 .swiper-slide {
   /* opacity: 0;
     animation: pop 0.5s 0.1s forwards ; */
-  border-radius: 12px;
-  overflow: hidden;
+  border-radius: 1rem;
+
   background-position: center;
   background-size: cover;
   object-fit: cover;
@@ -299,10 +299,10 @@ h3 {
 }
 
 .swiper-slide img {
-  overflow: hidden;
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: 1rem;
 }
 
 #flex-main
@@ -312,6 +312,22 @@ h3 {
   margin-left: 50px;
 }
 
+.swiper-coverflow {
+  width: 10px;
+}
+
+.swiper-button-prev {
+  color: white;
+  transform: translateX(5vw);
+}
+.swiper-button-next {
+  color: white;
+  transform: translateX(-5vw);
+}
+.swiper-pagination {
+  --swiper-pagination-bullet-inactive-color: rgb(255, 255, 255);
+  --swiper-pagination-color: rgb(255, 255, 255);
+}
 #swiper-wrapper-510255eaf226dd7d4
   > div.swiper-slide.swiper-slide-visible.swiper-slide-active
   > img {
@@ -399,10 +415,6 @@ h2 {
   margin-bottom: 8rem;
 }
 
-#openclassrooms-sep:hover {
-  cursor: grab;
-}
-
 #texte-presentation {
   font-size: 30px;
   margin: 0px 100px;
@@ -424,6 +436,7 @@ h2 {
 #flex-main
   > div.swiper.mySwiper.swiper-coverflow.swiper-3d.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-watch-progress {
   animation: pop 0.5s 0.2s forwards;
+
   opacity: 0;
 }
 .rotate {
@@ -535,10 +548,13 @@ h2 {
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.548);
 }
 
+#chrome-only {
+  font-size: 15px;
+}
+
 @media (max-width: 5000px) {
   html {
     height: 100vh;
-    overflow-y: hidden;
   }
 
   #flex-main {
@@ -742,6 +758,15 @@ h2 {
 }
 
 @media (max-width: 600px) {
+  #chrome-only {
+    font-size: 10px;
+  }
+  .swiper-button-next {
+    transform: translateY(-15px);
+  }
+  .swiper-button-prev {
+    transform: translateY(-15px);
+  }
   #presentation {
     margin-bottom: 30px;
   }
@@ -820,7 +845,7 @@ h2 {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
   #btn {
     font-size: 12px;
     width: 130px;
@@ -832,13 +857,27 @@ h2 {
   h2 {
     font-size: 40px;
   }
-  p {
+  /* p {
     font-size: 15px;
-  }
+  } */
 
+  a.github-project-logo {
+    margin: 0;
+    margin-top: 5px;
+  }
+  a.site-project-logo {
+    margin: 0;
+    margin-top: 5px;
+  }
   #texte-presentation {
     margin-left: 25px;
 
     margin-right: 25px;
+  }
+  div.flip-card > div > div.flip-card-back > div > p {
+    font-size: 12px;
+  }
+  div.flip-card > div > div.flip-card-back > div > p.techno {
+    font-size: 10px;
   }
 }
